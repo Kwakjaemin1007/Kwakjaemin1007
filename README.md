@@ -20,13 +20,13 @@
 
 ## Tech Stack
 
-| | |
-|:--|:--|
-| **Cloud · Infra** | <img src="https://skillicons.dev/icons?i=aws,linux,git,githubactions" height="36"/> |
-| **Backend** | <img src="https://skillicons.dev/icons?i=python,fastapi,postgres,redis" height="36"/> |
-| **Mobile · AI** | <img src="https://skillicons.dev/icons?i=kotlin,androidstudio,firebase,pytorch,opencv" height="36"/> |
-| **Systems** | <img src="https://skillicons.dev/icons?i=c" height="36"/> |
-| **Learning** | <img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform" height="36"/> |
+<table>
+  <tr><td><b>Cloud · Infra</b></td><td><img src="https://skillicons.dev/icons?i=aws,linux,git,githubactions" height="36"/></td></tr>
+  <tr><td><b>Backend</b></td><td><img src="https://skillicons.dev/icons?i=python,fastapi,postgres,redis" height="36"/></td></tr>
+  <tr><td><b>Mobile · AI</b></td><td><img src="https://skillicons.dev/icons?i=kotlin,androidstudio,firebase,pytorch,opencv" height="36"/></td></tr>
+  <tr><td><b>Systems</b></td><td><img src="https://skillicons.dev/icons?i=c" height="36"/></td></tr>
+  <tr><td><b>Learning</b></td><td><img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform" height="36"/></td></tr>
+</table>
 
 ## Featured
 
@@ -47,12 +47,21 @@
 
 ## Projects
 
-| 프로젝트 | 내용 | 역할 | 기술 |
-|:--|:--|:--|:--|
-| **[딸기 병해 진단](https://github.com/Kwakjaemin1007/Like-lion_-Smart-farm)**<br><sub>멋사 CV 부트캠프 · 2026.01 · 4명</sub> | YOLO 탐지 → EfficientNet-B0 5종 분류 2단계 파이프라인, 분류 Test 정확도 83.5% | YOLO v5·v8·11 비교, 증강·클래스 축소·해상도 실험, 파이프라인 구축 | `PyTorch` `YOLO` `EfficientNet` |
-| **차선 감지 모델 비교**<br><sub>멋사 CV 부트캠프 · 2026.01</sub> | 차선 인식 모델들을 팀원별로 맡아 성능 비교 | 담당 모델이 팀 최종 모델로 선정 | `PyTorch` |
-| **[EconUp](https://github.com/Kwakjaemin1007/EconUp)**<br><sub>개인 · 2026.05</sub> | 플래시카드·퀴즈로 경제용어를 익히는 Android 앱 (AI 코딩 도구 활용) | 기획·구현 | `Kotlin` `Compose` `Room` `Firestore` |
-| **[쓰레기 감지 카메라](https://github.com/Kwakjaemin1007/2-2-Iot)**<br><sub>세종대 IoT 학술제 · 2023</sub> | YOLOv5로 쓰레기를 탐지하는 카메라 기기 아이디어 구현 | 아이디어 구상, 모델 선정·학습 | `YOLOv5` `Python` |
+**[딸기 병해 진단](https://github.com/Kwakjaemin1007/Like-lion_-Smart-farm)** &nbsp;<sub>멋사 CV 부트캠프 · 2026.01 · 4명</sub>  
+YOLO 탐지 → EfficientNet-B0 5종 분류 2단계 파이프라인, 분류 Test 정확도 83.5%  
+<sub>역할 · YOLO v5·v8·11 비교, 증강·클래스 축소·해상도 실험, 파이프라인 구축</sub> &nbsp; `PyTorch` `YOLO` `EfficientNet`
+
+**차선 감지 모델 비교** &nbsp;<sub>멋사 CV 부트캠프 · 2026.01</sub>  
+차선 인식 모델들을 팀원별로 맡아 성능 비교  
+<sub>역할 · 담당 모델이 팀 최종 모델로 선정</sub> &nbsp; `PyTorch`
+
+**[EconUp](https://github.com/Kwakjaemin1007/EconUp)** &nbsp;<sub>개인 · 2026.05</sub>  
+플래시카드·퀴즈로 경제용어를 익히는 Android 앱 (AI 코딩 도구 활용)  
+<sub>역할 · 기획·구현</sub> &nbsp; `Kotlin` `Compose` `Room` `Firestore`
+
+**[쓰레기 감지 카메라](https://github.com/Kwakjaemin1007/2-2-Iot)** &nbsp;<sub>세종대 IoT 학술제 · 2023</sub>  
+YOLOv5로 쓰레기를 탐지하는 카메라 기기 아이디어 구현  
+<sub>역할 · 아이디어 구상, 모델 선정·학습</sub> &nbsp; `YOLOv5` `Python`
 
 ## Now Building — CoreOps
 
