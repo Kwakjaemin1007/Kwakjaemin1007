@@ -1,0 +1,94 @@
+# ─────────────────────────────────────────────────────────────
+# 프로필 README의 내용은 전부 이 파일에서 관리합니다.
+# 이 파일을 수정해서 커밋하면 GitHub Actions가 README.md를 다시 만듭니다.
+# README.md는 직접 고치지 마세요 (다음 빌드 때 덮어써집니다).
+# ─────────────────────────────────────────────────────────────
+
+name: 곽재민
+name_en: Jaemin Kwak
+headline: Cloud · Network · DevOps
+subline: 건국대학교 컴퓨터공학부 3학년
+
+intro: >-
+  클라우드 인프라와 네트워크를 중심으로, 서비스를 설계부터 배포·운영까지 책임지는
+  엔지니어를 목표로 하고 있습니다.
+
+# 상단 배지. label만 쓰면 회색 배지, link를 넣으면 클릭 가능
+badges:
+  - { label: Location, value: Seoul, color: 2c5364 }
+  - { label: Focus, value: Cloud · Network · DevOps, color: 2c5364 }
+  # - { label: Email, value: you@example.com, color: 2c5364, link: "mailto:you@example.com" }
+
+now:
+  - "**CoreOps** — Kubernetes 위에 오픈소스 5G 코어를 올려 배포·운영하는 프로젝트 설계 중"
+  - "AWS Solutions Architect Associate → CCNA 준비"
+
+# skillicons.dev 아이콘 이름: https://github.com/tandpfun/skill-icons#icons-list
+stack:
+  - { group: Cloud · Infra, icons: [aws, linux, git, githubactions] }
+  - { group: Backend, icons: [python, fastapi, postgres, redis] }
+  - { group: Mobile · AI, icons: [kotlin, androidstudio, firebase, pytorch, opencv] }
+  - { group: Systems, icons: [c] }
+  - { group: Learning, icons: [docker, kubernetes, terraform] }
+
+featured:
+  title: DDP — 딥페이크 탐지 플랫폼
+  repo: AICV-Deepfaker/deepfaker_detection
+  meta: 멋쟁이사자처럼 CV 부트캠프 최종 프로젝트 · 2026.01 – 02
+  summary: >-
+    영상이나 YouTube 링크를 넣으면 주파수·심박(rPPG)·음성 분석으로 딥페이크 여부를 판정하는 서비스.
+    FastAPI가 요청을 받고 Taskiq + Redis 큐로 넘겨 워커가 비동기로 분석합니다.
+  contributions:
+    - { area: 백엔드 설계, detail: "요구사항 ID 기준으로 회원·미디어·챗봇 3개 파트 역할 분담표 작성" }
+    - { area: 업로드 파이프라인, detail: "영상 업로드·URL 입력 → S3 저장 → 비동기 분석 → 결과 저장·알림 API", prs: [3] }
+    - { area: 스토리지 관리, detail: "회원 탈퇴 시 S3 프로필·영상 일괄 삭제, 중복 S3 삭제 함수 통합" }
+    - { area: rPPG 모델, detail: "EfficientPhys(rPPG-Toolbox) 추가 학습, 전처리·탐지기 백엔드 연동, 신호 시각화", prs: [4, 5, 6] }
+  stack: [FastAPI, Taskiq, Redis, AWS S3, PostgreSQL, PyTorch]
+
+projects:
+  - name: 딸기 병해 진단
+    repo: Kwakjaemin1007/Like-lion_-Smart-farm
+    meta: 멋사 CV 부트캠프 · 2026.01 · 4명
+    summary: "YOLO 탐지 → EfficientNet-B0 5종 분류 2단계 파이프라인, 분류 Test 정확도 83.5%"
+    role: "YOLO v5·v8·11 비교, 증강·클래스 축소·해상도 실험, 파이프라인 구축"
+    stack: [PyTorch, YOLO, EfficientNet]
+  - name: 차선 감지 모델 비교
+    meta: 멋사 CV 부트캠프 · 2026.01
+    summary: "차선 인식 모델들을 팀원별로 맡아 성능 비교"
+    role: "담당 모델이 팀 최종 모델로 선정"
+    stack: [PyTorch]
+  - name: EconUp
+    repo: Kwakjaemin1007/EconUp
+    meta: 개인 · 2026.05
+    summary: "플래시카드·퀴즈로 경제용어를 익히는 Android 앱 (AI 코딩 도구 활용)"
+    role: "기획·구현"
+    stack: [Kotlin, Compose, Room, Firestore]
+  - name: 쓰레기 감지 카메라
+    repo: Kwakjaemin1007/2-2-Iot
+    meta: 세종대 IoT 학술제 · 2023
+    summary: "YOLOv5로 쓰레기를 탐지하는 카메라 기기 아이디어 구현"
+    role: "아이디어 구상, 모델 선정·학습"
+    stack: [YOLOv5, Python]
+
+building:
+  name: CoreOps
+  summary: >-
+    AWS 위 Kubernetes에 오픈소스 5G 코어(Open5GS)와 기지국·단말 시뮬레이터(UERANSIM)를 올려
+    "작은 통신사"를 만들고, IaC·GitOps로 배포하며 망 품질 지표로 이상을 탐지합니다.
+  # done: true 로 바꾸면 체크 표시와 진행률이 자동으로 반영됩니다
+  milestones:
+    - { step: "설계 — 요구사항 · 아키텍처 · IP 계획 · 시퀀스 다이어그램", done: false }
+    - { step: "docker compose로 5G 코어 로컬 구동, 패킷 캡처 분석", done: false }
+    - { step: "Terraform으로 AWS VPC · k3s 구축", done: false }
+    - { step: "Helm · Argo CD · GitHub Actions 배포 자동화", done: false }
+    - { step: "네트워크 슬라이싱 · MEC 경로별 지연 비교", done: false }
+    - { step: "Prometheus · Grafana 관측성, 운영 API", done: false }
+    - { step: "부하 · 장애 실험과 이상 탐지", done: false }
+
+education:
+  - "**건국대학교** 컴퓨터공학부 (편입, 재학)"
+  - "**세종대학교** 소프트웨어학과 (편입 전)"
+  - "**멋쟁이사자처럼 CV 부트캠프** · 2025.12 – 2026.02 — 탐지·분할·생성 모델 실습, 팀 프로젝트 3건"
+
+certifications:
+  - { name: AWS Certified Cloud Practitioner, code: CLF-C02 }
