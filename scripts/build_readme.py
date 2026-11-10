@@ -51,11 +51,11 @@ def build(p: dict) -> str:
 
     # Stack
     add("## Tech Stack\n")
-    add("| | |\n|:--|:--|")
+    add("<table>")
     for row in p["stack"]:
         icons = ",".join(row["icons"])
-        add(f"| **{row['group']}** | <img src=\"https://skillicons.dev/icons?i={icons}\" height=\"36\"/> |")
-    add("")
+        add(f'  <tr><td><b>{row["group"]}</b></td><td><img src="https://skillicons.dev/icons?i={icons}" height="36"/></td></tr>')
+    add("</table>\n")
 
     # Featured
     f = p["featured"]
@@ -73,11 +73,10 @@ def build(p: dict) -> str:
 
     # Other projects
     add("## Projects\n")
-    add("| 프로젝트 | 내용 | 역할 | 기술 |\n|:--|:--|:--|:--|")
     for pr in p["projects"]:
-        name = f"**{repo_link(pr['name'], pr.get('repo'))}**<br><sub>{pr['meta']}</sub>"
-        add(f"| {name} | {pr['summary']} | {pr['role']} | {tags(pr['stack'])} |")
-    add("")
+        add(f"**{repo_link(pr['name'], pr.get('repo'))}** &nbsp;<sub>{pr['meta']}</sub>  ")
+        add(f"{pr['summary']}  ")
+        add(f"<sub>역할 · {pr['role']}</sub> &nbsp; {tags(pr['stack'])}\n")
 
     # Building
     b = p["building"]
